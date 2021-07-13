@@ -29,7 +29,7 @@ class Game:
 
 
         #dessiner le groupe de calque, le calque le plus en amont est la calque 3
-        self.group = pyscroll.PyscrollGroup(map_layer=map_layer,default_layer = 3)
+        self.group = pyscroll.PyscrollGroup(map_layer=map_layer,default_layer = 5)
         self.group.add(self.player)
 
     def handle_input(self):
@@ -53,7 +53,6 @@ class Game:
         #verification collision
         for sprite in self.group.sprites():
             if sprite.feet.collidelist(self.walls) > -1:
-            
                 sprite.move_back()
 
     def run(self):
