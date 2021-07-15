@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.1" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="36">
+<map version="1.5" tiledversion="1.7.1" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="38">
  <tileset firstgid="1" source="nature.tsx"/>
  <tileset firstgid="721" source="house.tsx"/>
  <layer id="1" name="background" width="50" height="50">
@@ -167,6 +167,7 @@
  <objectgroup id="4" name="Object">
   <object id="1" name="player" x="294" y="236">
    <point/>
+   <point/>
   </object>
   <object id="5" type="collision" x="1" y="0" width="791" height="31"/>
   <object id="8" type="collision" x="-2" y="-2" width="36" height="802"/>
@@ -182,6 +183,10 @@
   <object id="31" type="collision" x="188" y="414.667" width="9.33333" height="12"/>
   <object id="33" type="collision" x="61.3333" y="265.333" width="89.3333" height="22.6667"/>
   <object id="34" type="collision" x="222.667" y="457.333" width="70.6667" height="41.3333"/>
+  <object id="36" name="enter_house" type="enter_house" x="234.667" y="481.333" width="14.3333" height="25.6667"/>
+  <object id="37" name="spawn_house_exit" type="spawn_house_exit" x="241.667" y="514">
+   <point/>
+  </object>
  </objectgroup>
  <layer id="6" name="house" width="50" height="50">
   <data encoding="csv">
